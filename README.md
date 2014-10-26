@@ -1,3 +1,3 @@
-ResetInterfejsy
+Reset - Interfejsy
 ===============
-Projekty przygotowane na prelekcję koła Reset na ATH w Bielsku-Białej.
+Projekty przygotowane na prelekcję koła Reset ATH w Bielsku-Białej.
