@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResetAth.NoAutofac", "Reset
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResetAth.Autofac", "ResetAth.Autofac\ResetAth.Autofac.csproj", "{1B5F12E0-6E9F-40C3-A088-566C92C4C300}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResetAth.Test", "ResetAth.Test\ResetAth.Test.csproj", "{F94DF449-CDA5-4086-8EF2-240ADDF50C48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1B5F12E0-6E9F-40C3-A088-566C92C4C300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B5F12E0-6E9F-40C3-A088-566C92C4C300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B5F12E0-6E9F-40C3-A088-566C92C4C300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94DF449-CDA5-4086-8EF2-240ADDF50C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94DF449-CDA5-4086-8EF2-240ADDF50C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94DF449-CDA5-4086-8EF2-240ADDF50C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94DF449-CDA5-4086-8EF2-240ADDF50C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
