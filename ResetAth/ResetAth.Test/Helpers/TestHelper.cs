@@ -25,7 +25,7 @@ namespace ResetAth.Test.Helpers
             mock.Setup(m => m.GetAll()).Returns(AllPosts);
 
             mock.Setup(m => m.GetById(It.IsAny<int>()))
-                .Returns((int i) => AllPosts.Single(x => x.Id == i));
+                .Returns((int i) => AllPosts.SingleOrDefault(x => x.Id == i));
 
             mock.Setup(m => m.Add(It.IsAny<Post>())).Callback((Post post) =>
             {

@@ -21,7 +21,7 @@ namespace ResetAth.AutofacMvc.DAL.Implementations.SqlServer
         {
             using (var db = new AppDbContext())
             {
-                return db.Posts.Single<Post>(x => x.Id == id);
+                return db.Posts.SingleOrDefault<Post>(x => x.Id == id);
             }
         }
 
