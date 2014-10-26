@@ -1,0 +1,17 @@
+﻿@model ResetAth.AutofacMvc.Models.Post
+@{
+	ViewBag.Title = "Podgląd posta";
+}
+
+<h2>Podgląd posta</h2>
+<hr />
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		@Html.Partial("_SinglePost", Model)
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-3 col-md-offset-2">
+		@Html.ActionLink("Powrót", "Index", "Post", null, htmlAttributes: new { @class = "btn btn-block btn-primary" })
+	</div>
+</div>

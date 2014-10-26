@@ -1,0 +1,14 @@
+﻿@model ResetAth.AutofacMvc.Models.Post
+
+<div class="panel panel-primary custom-panel">
+	<div class="panel-heading">
+		<h4 style="display: inline-block;">@Model.Title</h4>
+		<a href="@Url.Action("Single", "Post", new { id = Model.Id })" class="btn btn-default pull-right">Więcej</a>
+	</div>
+	<div class="panel-body">
+		<img src="@Model.PathToImage" alt="@Model.Title" class="img-rounded img-responsive" />
+	</div>
+	<div class="panel-footer">
+		@Model.Content
+	</div>
+</div>
