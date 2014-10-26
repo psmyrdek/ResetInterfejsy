@@ -49,7 +49,7 @@ namespace ResetAth.Test
         }
 
         [TestMethod]
-        public void Add_Method_Should_Increase_Data_Source_Size()
+        public void Add_Method_Should_Increase_Data_Source_Size_By_One()
         {
             //Arrange
             IPostRepository repo = TestHelper.GetPostRepository();
