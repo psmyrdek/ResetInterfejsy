@@ -13,7 +13,7 @@ namespace ResetAth.Test.Helpers
     {
         public static IPostRepository GetPostRepository()
         {
-            IEnumerable<Post> AllPosts = new List<Post>
+            List<Post> AllPosts = new List<Post>
             {
                 new Post { Id = 0, Title = "Post 1 Title", Content = "Some content", PathToImage = "1 ImagePath"},
                 new Post { Id = 1, Title = "Post 2 Title", Content = "Some content", PathToImage = "2 ImagePath"},
@@ -26,6 +26,11 @@ namespace ResetAth.Test.Helpers
 
             mock.Setup(m => m.GetById(It.IsInRange<int>(0, 2, Range.Inclusive)))
                 .Returns((int i) => AllPosts.Single(x => x.Id == i));
+
+            mock.Setup(m => m.Add(It.IsAny<Post>())).Callback((Post post) =>
+            {
+                AllPosts.Add(post);
+            });
 
             return mock.Object;
         }
