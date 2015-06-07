@@ -1,9 +1,9 @@
-Reset - Interfejsy
+Reset - Interfaces demo
 ===============
-Projekty przygotowane na prelekcję koła Reset ATH w Bielsku-Białej.
+Power of interfaces in general
 
-Opis projektów:
-* ResetAth.Autofac - aplikacja konsolowa z zaimplementowanym DI
-* ResetAth.NoAutofac - aplikacja konsolowa
-* ResetAth.AutofacMvc - wykorzystanie AutoFaca w aplikacji MVC (zmiana źródła danych pomiędzy MySQL a SqlServer)
-* ResetAth.Test - testy jednostkowe aplikacji MVC
+What's inside
+* ResetAth.Autofac - console app with decoupled code because of Dependency Injection (via Autofac)
+* ResetAth.NoAutofac - console app with coupled code
+* ResetAth.AutofacMvc - DI in MVC (data source changing without any problems)
+* ResetAth.Test - MVC app unit testing
